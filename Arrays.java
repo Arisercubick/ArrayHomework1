@@ -35,4 +35,5 @@ public class Arrays {
         System.out.print(arr[i] + ", ");
       }
     }
+  }
 }
