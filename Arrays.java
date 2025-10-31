@@ -9,6 +9,19 @@ public class Arrays {
     for (int i = 0; i < arr.length; i++) {
       arr[i] = rand.nextInt();
     }
+
+    printArray(arr);
+
+    int[] copy = new int[arr.length];
+    for (int i = 0; i < arr.length; i++) {
+      copy[i] = arr[i];
+    }
+
+    for (int i = arr.length, int n = 0; i > 0; i--, n++) {
+      arr[i] = copy[n]
+    }
+    System.out.print("\n");
+    printArray(arr);
   }
 
   public static void printArray(int[] arr) {
