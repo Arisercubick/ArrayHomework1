@@ -4,6 +4,10 @@ public class Arrays {
   private static Random rand = new Random();
   private static Scanner reader = new Scanner(System.in);
   public static void main(String[] args) {
+    reverse();
+  }
+
+  public static void reverse() {
     System.out.print("How long should the array be: ");
     int arrLength = reader.nextInt();
     int[] arr = new int[arrLength];
