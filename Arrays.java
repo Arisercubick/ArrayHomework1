@@ -18,8 +18,8 @@ public class Arrays {
       copy[i] = arr[i];
     }
 
-    for (int i = arr.length, n = 0; i > 0; i--, n++) {
-      arr[i] = copy[n];
+    for (int i = arr.length-1, n = 0; i > 0; i--, n++) {
+      arr[n] = copy[i];
     }
     System.out.print("\n");
     printArray(arr);
