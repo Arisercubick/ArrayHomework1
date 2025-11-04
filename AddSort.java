@@ -8,6 +8,11 @@ public class AddSort {
     int input = (int) reader.nextDouble();
     int[] arr = new int[input];
 
+    System.out.print("\nMinimum number:");
+    int min = (int) reader.nextDouble();
+    System.out.print("\Maximum number:");
+    int max = (int) reader.nextDouble();
+    
     for (int i = 0; i < arr.length; i++) {
       arr[i] = rand.nextInt();
     }
