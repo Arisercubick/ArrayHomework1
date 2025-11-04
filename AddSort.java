@@ -6,5 +6,20 @@ public class AddSort {
   public static void main(String[] args) {
     System.out.print("How big is the array: ");
     int input = (int) reader.nextDouble();
+    int[] arr = new int[input];
+
+    for (int i = 0; i < arr.length; i++) {
+      arr[i] = rand.nextInt();
+    }
+    System.out.print("\nYour Array:\n");
+    for (int i = 0; i < arr.length; i++) {
+      if (i == 0) {
+        System.out.print("[ " + arr[i] + ", ");
+      } else if (i == arr.length - 1) {
+        System.out.print(arr[i] + "]");
+      } else {
+        System.out.print(arr[i] + ", ");
+      }
+    }
   }
 }
