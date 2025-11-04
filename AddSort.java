@@ -14,6 +14,9 @@ public class AddSort {
     System.out.print("\nMaximum number:");
     int max = (int) reader.nextDouble();
     int[] arr = fillArr(max, min, input);
+    printArr(arr);
+    arr = sortArr(arr);
+    printArr(arr);
   }
 
   public static int[] fillArr(int max, int min, int count) {
@@ -21,6 +24,18 @@ public class AddSort {
     for (int i = 0; i < arr.length; i++) {
       arr[i] = rand.nextInt(max+1+min)-min;
     }
+    return arr;
+  }
+
+  public static int[] sortArr(int[] arr) {
+    for (int = 1; i < arr.length; i++) {
+      if (arr[i] < arr[i-1]) {
+        int cop = arr[i-1];
+        arr[i-1] = arr[i];
+        arr[i] = cop;
+      }
+    }
+    return arr;
   }
 
   public static void printArr(int[] arr) {
