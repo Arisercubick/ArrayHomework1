@@ -14,7 +14,7 @@ public class AddSort {
     int max = (int) reader.nextDouble();
     
     for (int i = 0; i < arr.length; i++) {
-      arr[i] = rand.nextInt(max+1-min)-min;
+      arr[i] = rand.nextInt(max+1)-min;
     }
     System.out.print("\nYour Array:\n");
     for (int i = 0; i < arr.length; i++) {
