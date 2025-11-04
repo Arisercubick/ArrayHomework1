@@ -9,7 +9,7 @@ public class AddSort {
     int[] arr = new int[input];
 
     System.out.print("\nMinimum number:");
-    int min = (int) reader.nextDouble();
+    int min = -((int) reader.nextDouble());
     System.out.print("\nMaximum number:");
     int max = (int) reader.nextDouble();
     
