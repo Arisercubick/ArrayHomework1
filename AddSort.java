@@ -10,7 +10,7 @@ public class AddSort {
 
     System.out.print("\nMinimum number:");
     int min = (int) reader.nextDouble();
-    System.out.print("\Maximum number:");
+    System.out.print("\nMaximum number:");
     int max = (int) reader.nextDouble();
     
     for (int i = 0; i < arr.length; i++) {
