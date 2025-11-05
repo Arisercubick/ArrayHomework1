@@ -28,12 +28,13 @@ public class AddSort {
   }
 
   public static int[] sortArr(int[] arr) {
-    for (int = 1; i < arr.length; i++) {
-      if (arr[i] < arr[i-1]) {
-        int cop = arr[i-1];
-        arr[i-1] = arr[i];
-        arr[i] = cop;
-      }
+    for (int i = 0; i < arr.length; i++) {
+      for (int n = i; i < arr.length-i; n++) {
+        if (arr[n] > arr[i]) {
+          int cop = arr[i];
+          arr[i] = arr[n];
+          arr[n] = cop;
+        }
     }
     return arr;
   }
